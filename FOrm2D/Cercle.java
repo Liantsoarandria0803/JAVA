@@ -12,6 +12,16 @@ public class Cercle extends Form2D{
 	System.out.println(2*rayon*(3.14));
 	}
     public void dessiner(){
-        System.out.println("Boribory");
+        int r=(int)rayon;
+        for (int y = -r; y <= r; y++) {
+            for (int x = -r; x <= r; x++) {
+                if (x * x + y * y <= r * r) {
+                    System.out.print("* ");
+                } else {
+                    System.out.print("  ");
+                }
+            }
+            System.out.println();
+        }
     }
 }

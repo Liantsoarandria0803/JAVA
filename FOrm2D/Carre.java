@@ -14,6 +14,12 @@ class Carre extends Form2D
 	System.out.println(4*cote);
 	}
 	public void dessiner(){
-		System.out.println("Mahitsy ZORO");
+		// System.out.println(cote);
+		for(int i=0;i<cote;i++){
+			for (int j=0;j<cote;j++){
+				System.out.print("-");
+			}
+			System.out.println("");
+		}
 	}
 }
